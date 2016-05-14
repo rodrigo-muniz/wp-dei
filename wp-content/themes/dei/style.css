@@ -1,0 +1,750 @@
+/*
+Theme Name: Dei Theme
+Theme URI: http://mamangava.com/
+Author: Mamangava
+Author URI: http://mamangava.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dei
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+dei is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+
+
+/*Meu Estilo*/
+
+/** {
+	margin: 0;
+	padding: 0;
+}*/
+
+article, aside, figure, footer, header, nav, section{
+	display: block;
+}
+
+@font-face{
+	font-family: wincklerCond;
+	src: url('css/font/Winckler-Condensed.woff');
+}
+
+/*Geral*/
+html, body{
+	height: 100%;
+}
+
+#page-wrap{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/*Header*/
+header{
+	position: relative;
+	height: 240px;
+}
+
+#puc-logo{
+	background-image: url('images/puclogo.jpeg');
+	background-position: center center;
+	background-size: cover;
+	width: 76px;
+	height: 114px;
+	position: absolute;
+	top: 100px;
+	left: 45px;
+}
+#acronimo{
+	background-image: url('images/DEI.png');
+	position: absolute;
+	top: 100px;
+	right: 35px;
+	width: 166px;
+	height: 103px;
+}
+#bgimage{
+	background-image: url('images/bg-departamento.png');
+	background-position: center center;
+	background-size: cover;
+	height: 240px;
+}
+/*Fim Header*/
+
+/*Sidebar*/
+#content-wrap{
+	display: table;
+}
+
+aside{
+	display: table-cell;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #505050;
+	float: none !important;
+}
+
+/*Sidebar Footer*/
+
+#sidebar-footer{
+	margin: 100px 0 0 35px;
+}
+
+.info-dei{
+	margin-top: 30px;
+}
+
+.puc-footer{
+	font-family: "gesta",sans-serif;
+	color:  #757575;
+	font-size: 1.4rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	line-height: 20px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.logr-footer{
+	font-family: "gesta",sans-serif;
+	color:  #757575;
+	font-size: 1.4rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 20px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.copright-footer{
+	font-family: "gesta",sans-serif;
+	color:  #757575;
+	font-size: 1.2rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 20px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+/*Fim Sidebar Footer*/
+/*Fim Sidebar*/
+
+/*Conteudo*/
+#main-content{
+	display: table-cell;
+	float: none !important
+}
+
+#main-content .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*Fim Conteudo*/
+
+.social-icons{
+	background-image: url('images/social-icons.png');
+	background-position: center center;
+	background-size: cover;
+	height: 15px;
+	width: 65px;
+}
+
+
+.page-content-text{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+	margin-top: 64px;
+}
+
+.first-letter{
+	font-family: wincklerCond;
+	color:  #e6e6e6;
+	font-size: 27.996rem;/* Aproximação devido à substituição de fonte */
+	line-height: 0.01px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+	z-index: -1;
+	top: 155;
+    left: -100;
+    position: absolute;
+}
+
+
+
+.page-title{
+	margin-top: 150px;
+	margin-left: 70px;
+	font-family: wincklerCond;
+	font-size: 5.601rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	float: left;
+    width: auto;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.divider{
+	margin-top: 31px;
+	background-color:  #404040;
+	width: 499px;
+	height: 1px;
+}
+
+/*Fim Geral*/
+
+/*Equipe*/
+.equipe-content{
+	margin-top: 0px;
+}
+
+.membro-equipe-wrapper{
+	margin-top: 91px;
+}
+
+.membro-equipe{
+	width: 100%;
+	height: auto;
+}
+
+.membro-equipe #photo{
+	background-image: url('images/davi.png');
+	background-position: center;
+	background-size: cover;
+	width: 168px;
+	height: 168px;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
+
+.nome-membro-equipe, .desc-membro-equipe{
+	text-align: center;
+}
+
+.desc-membro-equipe{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 18px;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 22px;/* Aproximação devido à substituição de fonte */
+}
+
+.nome-membro-equipe > span{
+	font-family: wincklerCond;
+	color: #404040;
+	font-size: 2.6rem; /* Aproximação devido à substituição de fonte */
+	cursor: pointer;
+}
+
+
+.desc-membro-equipe > p{
+	font-family: "gesta",sans-serif;
+	color:  #9d9d9d;
+	font-size: 1.6rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 22px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+/*Fim Equipe*/
+
+/*Membro Equipe*/
+
+.close-symbol{
+	color: #c8c8c8;
+	position: absolute;
+	right: 25;
+}
+
+.professor-wrapper{
+	margin-top: 84px;
+}
+
+.professor-content{
+	position: relative;
+}
+
+.professor-photo{
+	width: 100%;
+	height: auto;
+}
+
+.professor-photo #photo{
+	background-image: url('images/davi.png');
+	background-position: center;
+	background-size: cover;
+	width: 190px;
+	height: 190px;
+	margin: 0 auto;
+	display: block;
+}
+
+.professor-nome, .professor-email{
+	text-align: center;
+}
+
+.professor-nome > span{
+	font-family: wincklerCond;
+	color: #404040;
+	font-size: 2.7rem; /* Aproximação devido à substituição de fonte */
+}
+
+.professor-email{
+	margin-top: 21px;
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	line-height: 22px;/* Aproximação devido à substituição de fonte */
+}
+
+.professor-descricao{
+	margin: 42px 0;
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 18px;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+/*Fim Membro Equipe*/
+
+
+
+
+/*Noticia*/
+
+.noticia-container{
+	margin-top: 85px;
+}
+.data-noticia{
+	font-family: "gesta",sans-serif;
+	color: #9d9d9d;
+	font-size: 1.2rem; /* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 22px; /* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.noticia-content > span{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 2.0rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	line-height: 22px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.noticia-content > p{
+	font-family: "gesta",sans-serif;
+	color:  #9d9d9d;
+	font-size: 1.6rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 22px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.link-noticia{
+	font-family: FontAwesome;
+	color:  #404040;
+	font-size: 0.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 10px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+
+}
+
+/*Fim Noticia*/
+
+/*Contato*/
+
+.contato-form{
+	margin-top: 103px;
+}
+
+.dei-label{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+	float: left;
+}
+
+.dei-logradouro{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+	float: left;
+}
+
+.contato{
+	margin-top: 39px;
+}
+.contato > span{
+	width: 100%;
+	float: right;
+}
+
+.title{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+.text{
+	font-family: "gesta",sans-serif;
+	color:  #404040;
+	font-size: 1.8rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 400;
+	line-height: 26px;/* Aproximação devido à substituição de fonte */
+	text-align: left;
+}
+
+/*Fim contato*/
+
+
+
+/*Accordion*/
+
+.dei-accordion{
+	margin-left: 35px;
+	width: 80%;
+}
+
+.dei-accordion .panel-title, .dei-accordion .list-group-item, .dei-accordion .list-group-item  span, span.list-group-item{
+	font-family: "gesta",sans-serif;
+	color:  #9d9d9d;
+	font-size: 1.6rem;/* Aproximação devido à substituição de fonte */
+	font-weight: 700;
+	text-align: left;
+	cursor: pointer;
+}
+
+a:hover, a:focus, a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover{
+	color: #9d9d9d;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.dei-accordion .panel{
+	margin-bottom: 0px;
+	border-top: 1px solid #A4A4A4;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	background-color: transparent;
+	border-radius: 0px;
+	box-shadow: none;
+}
+.dei-accordion, .panel-default>.panel-heading{
+	border-color: transparent;	
+	background-color: transparent;
+}
+
+.dei-accordion .list-group-item{
+	border-top: 0px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	background-color: transparent;
+}
+
+.panel-default:eq(1){
+	border: none;
+}
+
+.subacc-first{
+	font-size: 14px;
+    margin-left: 15px;
+}
+
+.subacc-second{
+	font-size: 14px;
+    margin-left: 35px;
+}
+
+.acc-panel-selected{
+	border-top: 1px solid #FFFFFF !important;
+	border-bottom: 1px solid #FFFFFF !important;
+}
+
+.acc-item-selected{
+	color: #FFFFFF !important;
+}
+
+.acc-interno i{
+	color:  #9d9d9d;
+	top: 13;
+	left: 30;
+}
+
+/*Fim do Accordion*/
+
+/*Footer*/
+
+
+/*Fim footer*/
+
+/*Responsive Itens*/
+.responsive-layout-sm{
+	display: none;
+}
+
+.footer-responsive-layout-sm{
+	display: none;
+	width: 100%;
+	height: 300px;
+	background-color: #505050;
+	margin-top: 30px;
+}
+
+/*.footer-responsive-layout-sm .info-footer{
+	left: 25%;
+}*/
+
+.navbar, .navbar-default .navbar-toggle, .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border: none;
+}
+
+.navbar-default{
+	background-color: #505050;
+	z-index:1;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.responsive-layout-sm{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	position: absolute;
+	top: 240;
+}
+
+/*Fim Responsive Itens*/
+
+/*High Resolution Images for pixel ratio 2*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.puc-logo{
+		background-image: url('images/puclogo@2x.png');
+	}
+	/*.social-icons{
+		background-image: url('images/social-icons@2x.png');
+	}*/
+	.acronimo{
+		background-image: url('images/DEI@2x.png');
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+
+/*Fim High Resolution Images for pixel ratio 2*/
+
+
+
+/*Responsive Behavior*/
+
+@media only screen and (max-width: 990px)  {
+
+	.accordion{
+        display: none !important;
+    }
+
+    .responsive-layout-sm, #content-wrap, #main-content{
+    	display: block !important;
+    }
+	
+	#bgimage{
+		margin-top: 289px;
+	}
+    
+    aside{
+    	display: none !important;
+    }
+
+    .footer-responsive-layout-sm{
+		display: block !important;
+	}
+
+	.page-title{
+		margin-left: 35px;
+	}
+
+	.navbar{
+		border-radius: 0;
+	}
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+   		font-family: "gesta",sans-serif;
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+    }
+
+    .navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret{
+    	margin: -24px 15px 0 0;
+    }
+
+    .dropdown-menu>li>a{
+    	font-family: "gesta",sans-serif;
+    	color: #777;
+    }
+
+    .dei-label, .dei-logradouro{
+    	text-align: center;
+    	width: 100%
+    }
+
+    .contato .title, .contato .text{
+    	text-align: center;
+    }
+
+    .site-wrapper{
+    	padding-left: 0;
+    }
+
+    .sidebar-wrapper{
+    	width: 100%;
+    	height: 290px;
+    	margin-left: 0;
+    }
+
+    .content-wrapper{
+    	left: 0;
+    	transition: margin-top 0.35s;
+    }
+
+    /*section{
+    	float: left;
+    	width: 100%;
+    	height: 100%;
+    }*/
+
+    .page-content-wrapper{
+		width: 100%;
+		padding-left: 15;
+		padding-right: 15;
+    }
+
+    footer{
+    	padding-top: 30px;
+    	margin-top: 50px;
+    }
+
+    .footer-responsive-layout-sm .info-footer span{
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.footer-responsive-layout-sm .social-icons{
+		margin-left: 45%
+	}
+
+}
+
+/*Fim Responsive Behavior*/
+
+
+
