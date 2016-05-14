@@ -34,7 +34,6 @@
 						</div>
 						<div class="col-lg-offset-2 divider"></div>
 					<?php endwhile; ?>
-					
 				</div>
 			</div>
 		</div>
