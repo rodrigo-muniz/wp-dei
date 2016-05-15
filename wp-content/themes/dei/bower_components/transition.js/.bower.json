@@ -1,0 +1,45 @@
+{
+  "name": "transition.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/icodebuster/transition.js",
+  "main": [
+    "./js/transition.js",
+    "./css/transition-animations.css"
+  ],
+  "authors": [
+    "Jobin Kurian <ti.jobinkurian@gmail.com>"
+  ],
+  "description": "A simple and elegant single page transition library.",
+  "keywords": [
+    "page-transition",
+    "page-animation",
+    "transition",
+    "animation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.md",
+    "*.html",
+    "css/demo-multi-element.css",
+    "css/demo-single-page.css",
+    "js/jquery-2.1.3.min.js"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  },
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "4edf60ce2c112d5ddd98b82ca467abbeec1dbcd2"
+  },
+  "_source": "https://github.com/icodebuster/transition.js.git",
+  "_target": "^1.0.0",
+  "_originalSource": "transition.js",
+  "_direct": true
+}
