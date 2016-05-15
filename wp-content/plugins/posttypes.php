@@ -22,6 +22,8 @@ along with Custom Post Types.
 */
 
 function my_custom_posttypes() {
+
+    //Notícias Post Type
 	$labels = array(
         'name'               => 'Noticias',
         'singular_name'      => 'Noticia',
@@ -52,9 +54,44 @@ function my_custom_posttypes() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 5,
-        'supports'           => array( 'title', 'editor', 'thumbnail' )
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats' )
     );
 	register_post_type('noticias', $args);
+
+    //Equipe Post Type
+    $labels = array(
+        'name'               => 'Equipe',
+        'singular_name'      => 'Equipe',
+        'menu_name'          => 'Equipe',
+        'name_admin_bar'     => 'Equipe',
+        'add_new'            => 'Adicionar Membro de Equipe',
+        'add_new_item'       => 'Adicionar novo Membro de Equipe',
+        'new_item'           => 'Novo Membro de Equipe',
+        'edit_item'          => 'Editar Membro de Equipe',
+        'view_item'          => 'Visualizar Membro de Equipe',
+        'all_items'          => 'Todos os Membro de Equipes',
+        'search_items'       => 'Procurar Membro de Equipes',
+        'parent_item_colon'  => 'Parent Membro de Equipe:',
+        'not_found'          => 'Nenhum Membro encontrado.',
+        'not_found_in_trash' => 'Nenhum Membro encontrado na lixeira.',
+    );
+    
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'menu_icon'          => 'dashicons-id-alt',
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'equipe' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'post-formats', 'custom-fields' )
+    );
+    register_post_type('equipe', $args);
 }
 
 add_action('init', 'my_custom_posttypes');

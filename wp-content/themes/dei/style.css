@@ -364,15 +364,15 @@ header{
 
 /*Sidebar*/
 #content-wrap{
-	//display: table;
+	/*display: table;*/
 }
 
 aside{
-	display: table-cell;
+	/*display: block;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
 	background-color: #505050;
-	float: none !important;
+	/*float: none !important;*/
 }
 
 /*Sidebar Footer*/
@@ -416,8 +416,8 @@ aside{
 
 /*Conteudo*/
 #main-content{
-	display: table-cell;
-	float: none !important
+	/*display: block;
+	float: none !important*/
 }
 
 #main-content .row{
@@ -497,10 +497,7 @@ aside{
 	height: auto;
 }
 
-.membro-equipe #photo{
-	background-image: url('images/davi.png');
-	background-position: center;
-	background-size: cover;
+.membro-equipe img{
 	width: 168px;
 	height: 168px;
 	margin: 0 auto;
@@ -544,7 +541,7 @@ aside{
 .close-symbol{
 	color: #c8c8c8;
 	position: absolute;
-	right: 25;
+	right: 25px;
 }
 
 .professor-wrapper{
