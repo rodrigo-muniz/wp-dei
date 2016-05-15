@@ -47,14 +47,7 @@
                     <div id="bgimage" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <h1 class="text-uppercase page-title">
                             <?php 
-                                if(is_front_page()){
-                                    echo 'Departamento';
-                                }elseif(is_page()){
-                                    the_title();
-                                }
-                                elseif (is_post_type_archive()){
-                                    post_type_archive_title();
-                                }
+                                echo 'Equipe'
                             ?>
                         </h1>	
                     </div>

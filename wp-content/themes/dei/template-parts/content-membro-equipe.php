@@ -11,8 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="professor-wrapper">
-		<div class="col-lg-offset-1 col-lg-6 professor-content">
-			<span class="glyphicon glyphicon-remove close-symbol" aria-hidden="true" onclick="carregar('equipe.html', 'equipe')"></span>
+		<div class="col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-6 professor-content">
+			<a href="<?php echo get_post_type_archive_link( 'equipe' ); ?>"
+				<span class="glyphicon glyphicon-remove close-symbol" aria-hidden="true"></span>
+			</a>			
 			<div class="professor-photo">
 				<div id="photo"></div>
 			</div>

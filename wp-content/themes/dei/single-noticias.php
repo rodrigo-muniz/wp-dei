@@ -7,7 +7,7 @@
  * @package dei
  */
 
-get_header('equipe'); 
+get_header('noticias'); 
 get_sidebar();?>
 
 
@@ -15,7 +15,14 @@ get_sidebar();?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'membro-equipe' );
+			get_template_part( 'template-parts/content', 'noticias-single' );
+
+			
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
 
 		endwhile; // End of the loop.
 		?>

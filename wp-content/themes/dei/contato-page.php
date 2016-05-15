@@ -29,7 +29,7 @@
 							</div>
 							<button class="btn btn-default" type="button">Enviar</button> -->
 						</div>
-						<div class="col-sm-12 col-lg-2">
+						<div class="col-sm-12 col-lg-3">
 							<div class="social-icons"></div>
 							<div class="contato">
 								<span class="title">E-mail</span>

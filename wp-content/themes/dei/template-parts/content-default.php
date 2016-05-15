@@ -2,7 +2,7 @@
 	<div class="row page-content-wrapper body-content">
 		<div class="page-content">
 			<div class="content">
-				<div class="col-md-offset-1 col-md-11 col-lg-offset-3 col-lg-6">
+				<div class="col-md-offset-1 col-md-11 col-lg-offset-2 col-lg-9">
 					<div class="page-content-text">
 						<span class="first-letter visible-lg"></span>
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();

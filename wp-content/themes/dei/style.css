@@ -196,60 +196,72 @@ a:active {
 # Ajuste MENU ACCORDION
 --------------------------------------------------------------*/
 #cssmenu {
-    width: 100%;
+    width: 80%;
     font-family: initial;
     color: initial;
+    margin-left: 35px;
 }
-
 
 
 #cssmenu > ul > li > a {
     padding: 15px 20px;
     border: 0;
-    border-top: solid 1px white;
-    //border-bottom: solid 1px white;
+    border-top: solid 1px #A4A4A4;;
     cursor: pointer;
     z-index: 2;
-    font-size: 14px;
-    font-weight: normal;
     text-decoration: none;
-    color: #ffffff;
-    //text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
-    text-shadow: none;
+    text-shadow: none !important;
     background: transparent; 
     box-shadow: none;
+    font-family: "gesta",sans-serif;
+	color:  #9d9d9d;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: left;
 }
 
 #cssmenu ul ul li a {
     cursor: pointer;
     border: 0;
-    border-top: solid 1px white;
-    //border-bottom: solid 1px white;
     padding: 10px 20px;
     z-index: 1;
     text-decoration: none;
-    font-size: 14px;
-    color: #eeeeee;
     background: transparent;
     box-shadow: none;
+    font-family: "gesta",sans-serif;
+	color:  #9d9d9d;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: left;
 }
 
 #cssmenu > ul > li:last-child > a, #cssmenu > ul > li.last > a {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #A4A4A4;
 }
 
-#cssmenu > ul > li.open > a {
+#cssmenu > ul > li.open > a, #cssmenu ul ul li.open > a {
     box-shadow: none;
-    border-bottom: 1px solid white;
+    border-bottom: 0px solid transparent;
+    background: transparent;
+    
 }
 #cssmenu > ul > li > a:hover, #cssmenu > ul > li.active > a, #cssmenu > ul > li.open > a {
     color: #eeeeee;
     background: transparent;
 }
 
-#cssmenu ul ul li:hover > a, #cssmenu ul ul li.open > a, #cssmenu ul ul li.active > a {
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li.open, #cssmenu ul ul li.active > a {
     background: transparent;
     color: #ffffff;
+}
+
+#cssmenu > ul > li.active > a, #cssmenu ul ul li.active > a{
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a{
+	margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -644,7 +656,7 @@ aside{
 }
 
 .professor-descricao{
-	margin: 42px 0;
+	margin-top: 42px;
 	font-family: "gesta",sans-serif;
 	color:  #404040;
 	font-size: 18px;/* Aproximação devido à substituição de fonte */
