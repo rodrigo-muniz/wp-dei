@@ -19,7 +19,7 @@ get_header(); ?>
 	<div class="row page-content-wrapper body-content">
 		<div class="page-content">
 			<div class="content">
-				<div class="col-md-offset-1 col-md-11 col-lg-offset-3 col-lg-6">
+				<div class="col-md-offset-1 col-md-11 col-lg-offset-2 col-lg-9">
 					<div class="page-content-text">
 						<span class="first-letter visible-lg"></span>
 							<p>Nesses 47 anos de existência, o Departamento de Engenharia Industrial da PUC-Rio (DEI) vem continuamente se especializando em temas abordados desta engenharia, por meio do esforço de seus professores, no sentido de oferecer ensino e orientação de excelência tanto em nível de graduação quanto de pós-graduação, e realizar pesquisas acadêmicas cujos resultados estão vinculados à formação de recursos humanos e que são publicadas em periódicos científicos qualificados de grande penetração nacional e internacional.</p>
