@@ -16,7 +16,8 @@
 				<span class="glyphicon glyphicon-remove close-symbol" aria-hidden="true"></span>
 			</a>			
 			<div class="professor-photo">
-				<div id="photo"></div>
+				<?php $img = wp_get_attachment_image_src( get_post_thumbnail_id() );
+				echo "<img src='$img[0]' />"; ?>				
 			</div>
 			<div class="professor-nome">
 				<span><?php echo get_post_meta(get_the_ID(), 'nome', true); ?></span>

@@ -393,6 +393,13 @@ html, body{
 	height: 100%;
 }
 
+.row-eq-height{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 #page-wrap{
 	width: 100%;
 	margin: 0 auto;
@@ -485,8 +492,7 @@ aside{
 
 /*Conteudo*/
 #main-content{
-	/*display: block;
-	float: none !important*/
+	padding-bottom: 80px;
 }
 
 #main-content .row{
@@ -522,8 +528,8 @@ aside{
 	line-height: 0.01px;/* Aproximação devido à substituição de fonte */
 	text-align: left;
 	z-index: -1;
-	top: 155;
-    left: -100;
+	top: 155px;
+    left: -100px;
     position: absolute;
 }
 
@@ -626,8 +632,8 @@ aside{
 	height: auto;
 }
 
-.professor-photo #photo{
-	background-image: url('images/davi.png');
+.professor-photo img{
+	/*background-image: url('images/davi.png');*/
 	background-position: center;
 	background-size: cover;
 	width: 190px;

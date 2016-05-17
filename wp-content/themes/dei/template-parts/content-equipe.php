@@ -12,8 +12,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 membro-equipe-wrapper">
 		<div class="membro-equipe img-responsive">
-			<!-- <div id="photo"></div> -->
-			<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail(); ?></a>
+			<a href="<?php the_permalink(); ?>">
+				<?php $img = wp_get_attachment_image_src( get_post_thumbnail_id() );
+				echo "<img src='$img[0]' />"; ?>
+			</a>
 		</div>
 		<div class="nome-membro-equipe" name="davi">
 			<span class="text-uppercase">

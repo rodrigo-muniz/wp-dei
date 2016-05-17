@@ -133,6 +133,7 @@ function dei_scripts() {
     
     
    wp_enqueue_script('cssmenu-scripts', get_template_directory_uri() . '/cssmenu/script.js');
+   wp_enqueue_script('default-scripts', get_template_directory_uri() . '/js/script.js');
     
 
 
