@@ -13,8 +13,13 @@
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 membro-equipe-wrapper">
 		<div class="membro-equipe img-responsive">
 			<a href="<?php the_permalink(); ?>">
-				<?php $img = wp_get_attachment_image_src( get_post_thumbnail_id() );
-				echo "<img src='$img[0]' />"; ?>
+				<?php if ( has_post_thumbnail() ) {
+						$img = wp_get_attachment_image_src( get_post_thumbnail_id() );
+						echo "<img src='$img[0]' />"; 
+					}else{
+						echo "<img src=''/>";
+					}
+				?>
 			</a>
 		</div>
 		<div class="nome-membro-equipe" name="davi">

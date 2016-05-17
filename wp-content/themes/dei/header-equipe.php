@@ -56,4 +56,4 @@
 
 
 
-            <div id="content-wrap" class="row">
+            <div id="content-wrap" class="row row-eq-height">
