@@ -35,7 +35,7 @@
             <div id="header-wrap" class="row">
                 <header>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div id="puc-logo"></div>
+                        <a href="<?php echo get_home_url(); ?>"><div id="puc-logo"></div></a>
                         <div id="acronimo"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 responsive-layout-sm">
