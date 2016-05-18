@@ -169,6 +169,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+require get_template_directory() . '/inc/bootstrap_menu.php';
+
 
 
 
