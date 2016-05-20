@@ -20,8 +20,8 @@
                 'container_class'   => 'collapse navbar-collapse',
                 'container_id'      => 'nav-walker',
                 'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'twitter_bootstrap_nav_walker::fallback',
-                'walker'            => new twitter_bootstrap_nav_walker())
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
                                                

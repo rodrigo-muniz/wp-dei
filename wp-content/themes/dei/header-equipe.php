@@ -39,10 +39,7 @@
                         <div id="acronimo"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 responsive-layout-sm">
-                        <nav id="site-navigation"  class="main-navigation navbar navbar-default"  role="navigation">
-                            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'dei'); ?></button>
-                            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-                        </nav><!-- #site-navigation -->
+                        <?php get_template_part( 'template-parts/content', 'menu' ); ?>
                     </div>
                     <div id="bgimage" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <h1 class="text-uppercase page-title">
